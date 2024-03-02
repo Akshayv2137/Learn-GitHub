@@ -22,7 +22,7 @@
 * [Branching and Merging](#branching-and-merging)
 * [Fetching and Checking Out Remote Branches](#fetching-and-checking-out-remote-branches)
 * [Merging branch to trunk/master](#merging-branch-to-trunk/master)
-* [Updating a local repository to a Github repository](#updating-a-local-repository-to-a-github-repository)
+* [Updating a local repository to a Github repository](#updating-a-local-repository-to-the-github-repository)
 * [Git Resetting](#git-resetting)
 * [Git Remote Management](#git-remote-management)
 * [Git grep](#git-grep)
@@ -395,7 +395,7 @@ To merge a branch into the trunk/master, follow these steps:
 This sequence of commands allows for the seamless integration of changes from a specific branch into the trunk/master branch while providing an option to cancel the merge operation if necessary.t merge --abort
 ```
 
-#### Updating a local repository to a Github repository
+#### Updating a local repository to the Github repository
 
 **Question:** How can I update my local repository with changes from a GitHub repository and track an existing branch? 
 
