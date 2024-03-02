@@ -4,11 +4,7 @@
   align="right"
 />
 
-
-
 # Learn GitHub Git Commands
-
-
 ## About it
 > New to Git? Master the fundamentals with this quick guide. We'll cover the most important commands for managing your code. Let's make version control easy; feel free to suggest improvements."
 
@@ -26,7 +22,7 @@
 * [Branching and Merging](#branching-and-merging)
 * [Fetching and Checking Out Remote Branches](#fetching-and-checking-out-remote-branches)
 * [Merging branch to trunk/master](#merging-branch-to-trunk/master)
-* [Updating a local repository with changes from a Github repository](#updating-a-local-repository-with-changes-from-a-github-repository)
+* [Updating a local repository to a Github repository](#updating-a-local-repository-to-a-github-repository)
 * [Git Resetting](#git-resetting)
 * [Git Remote Management](#git-remote-management)
 * [Git grep](#git-grep)
@@ -40,7 +36,6 @@
 
 #### What is Git?
 
-
 Git is a version control system. It acts like a powerful "undo" button for your project files, especially code.  Key features include:
 
 Change tracking: Tracks every modification to your files over time.
@@ -50,9 +45,7 @@ Collaboration: Enables multiple developers to work on the same project smoothly.
 
 #### Install Git
 
-Absolutely! Here's a longer version of the answer, providing more context without being repetitive:
-
-####How do I get Git on computer?
+**Question:** How do I get Git on computer?
 
 1. **Download the installer:**
    * Visit the official Git website ([https://git-scm.com/download](https://git-scm.com/download)).
@@ -113,7 +106,7 @@ To commence version control for existing files, you must track them and perform 
    ```
 #### Checking the status of your files
 
-How do I check what's happening with my files in Git?
+Question: How do I check what's happening with my files in Git?
 
 The `git status` command is your best friend for understanding your project's state. Here's how to use it:
 
@@ -144,7 +137,7 @@ $ git status
 
 #### Staging files
 
-Question: How do you stage files for commit in a Git repository, and what are the different methods available?
+**Question:** How do you stage files for commit in a Git repository, and what are the different methods available?
 
 In the process of staging files for commit in a Git repository, several methods are available to effectively manage changes. Here's a breakdown of these methods:
 
@@ -170,13 +163,12 @@ In the process of staging files for commit in a Git repository, several methods 
 
 By employing these commands, you can efficiently prepare your changes for the next commit in your Git repository.
 
-Important Notes:
-
+**Important Notes:**
 New Files Matter: Remember, git add also introduces completely new files to Git's tracking system.
 Think Before You Commit: Staging lets you carefully review and refine what will be permanently saved. Until you git commit, nothing is set in stone.
 
 #### Stashing files
-Question: How can I use Git stash effectively to manage changes in a dirty directory, and what are some common commands associated with it?
+**Question:** How can I use Git stash effectively to manage changes in a dirty directory, and what are some common commands associated with it?
 
 Git stash is a handy command that allows you to temporarily "hide" changes in a dirty directory, preserving them for later use. This command is particularly useful when you need to switch branches or perform other operations without committing your changes. 
 Here's a breakdown of some common Git stash commands:
@@ -213,27 +205,17 @@ $ git stash show
 $ git diff stash@{0}
 ```
 
-These commands provide flexibility in managing stashed changes, allowing you to apply, drop, or list stashes as needed.
-
-
-When to use the stash:
-
-Switching branches: Quickly jump to a different task without finishing what you're currently working on.
+**Switching branches:** Quickly jump to a different task without finishing what you're currently working on.
 Cleaning up: You want to commit some of your work but not everything. Stash the rest for later.
-Avoiding conflicts: You need to pull in changes from a teammate, but your own work isn't ready to merge.
-Experimenting: Try out an idea but preserve the option to easily revert back to your previous state.
-Remember: The stash is flexible and powerful. Don't be afraid to use it to keep your workflow organized and avoid losing work!
+**Avoiding conflicts:** You need to pull in changes from a teammate, but your own work isn't ready to merge.
+**Experimenting:** Try out an idea but preserve the option to easily revert back to your previous state.
+
+**Remember:** The stash is flexible and powerful. Don't be afraid to use it to keep your workflow organized and avoid losing work!
 
 #### Committing files
-Question: How can I effectively manage file commits in Git, and what are the different techniques involved in committing files?
+**Question:** How can I effectively manage file commits in Git, and what are the different techniques involved in committing files?
 
 After staging files, the next step is to commit them using the following commands:
-
-**Formatted Information:**
-
-#### Committing files
-
-Once files are added or staged, the subsequent step involves committing them.
 
 ```sh
 # Commit staged file(s)
@@ -270,10 +252,9 @@ $ git commit
 - The provided commands illustrate various ways to commit files in Git.
 - Techniques such as amending commits and squashing commits together are also explained.
 
-
 #### Branching and Merging
 
-Question: How can you delete a local branch in Git, ensuring it is removed even if it hasn't been merged yet?
+**Question:** How can you delete a local branch in Git, ensuring it is removed even if it hasn't been merged yet?
 
 Below are essential Git commands for managing branches and merging changes:
 
@@ -355,14 +336,14 @@ Below are essential Git commands for managing branches and merging changes:
   ```
   Pushes the local branch `branchname` to the remote repository after rebasing.
   
-Tips:
+**Tips:**
 
 Name branches descriptively: (e.g., "new-login-feature", "bugfix-123")
 Switch branches often: Keeps your changes focused within each branch.
 Merge strategically: Decide when and how to bring changes from a branch into your main "master" branch.
 
 #### Fetching and Checking Out Remote Branches
-Question: How can I fetch and check out remote branches in Git, and what commands are involved?
+**Question:** How can I fetch and check out remote branches in Git, and what commands are involved?
 
 To fetch and check out remote branches in Git, follow these steps:
 
@@ -392,7 +373,7 @@ These commands will help you effectively manage remote branches in your Git repo
 
 #### Merging branch to trunk/master
 
-Question: How can I merge a branch into the trunk/master using Git, specifically on a command-line interface?
+**Question:** How can I merge a branch into the trunk/master using Git, specifically on a command-line interface?
 
 To merge a branch into the trunk/master, follow these steps:
 
@@ -414,12 +395,13 @@ To merge a branch into the trunk/master, follow these steps:
 This sequence of commands allows for the seamless integration of changes from a specific branch into the trunk/master branch while providing an option to cancel the merge operation if necessary.t merge --abort
 ```
 
-#### Updating a local repository with changes from a Github repository
-Question: How can I update my local repository with changes from a GitHub repository and track an existing branch? 
+#### Updating a local repository to a Github repository
+
+**Question:** How can I update my local repository with changes from a GitHub repository and track an existing branch? 
 
 Instructions and Explanation:
 
-1. **Updating a local repository with changes from a GitHub repository**:
+1. **Updating a local repository with changes from a GitHub repository **:
    To update your local repository with changes from a GitHub repository, you can use the following Git command:
    ```sh
    $ git pull origin master
@@ -435,7 +417,7 @@ Instructions and Explanation:
    
 #### Git Resetting
 
-Question: How can I "undo" things in Git?
+**Question:** How can I "undo" things in Git?
 
 Git provides several options for resetting changes in your repository. 
 Below are some common scenarios and their corresponding commands:
@@ -482,7 +464,7 @@ Make Backups: If unsure, create a new branch before resetting to protect your wo
 
 #### Git Remote Management
 
-Question: How can I manage Git remotes and track branches, particularly when working with repositories on GitHub?
+**Question:** How can I manage Git remotes and track branches, particularly when working with repositories on GitHub?
 
 To manage Git remotes efficiently, consider the following commands:
 
@@ -515,7 +497,7 @@ To manage Git remotes efficiently, consider the following commands:
 
 #### Git Grep
 
-Question: How can I efficiently search for specific strings within a directory using Git grep?
+**Question:** How can I efficiently search for specific strings within a directory using Git grep?
 
 Git grep is a powerful tool for searching within a Git repository for specific strings or patterns. Here's how you can utilize it effectively:
 
@@ -546,7 +528,7 @@ Git grep is a powerful tool for searching within a Git repository for specific s
 
 #### Git Blame
 
-Question: How can I utilize Git Blame to track the alteration history of a file, displaying both the author's name and the corresponding SHA?
+**Question:** How can I utilize Git Blame to track the alteration history of a file, displaying both the author's name and the corresponding SHA?
 
 ```sh
 # To display the alteration history of a file with the author's name
@@ -556,16 +538,14 @@ $ git blame [filename]
 $ git blame [filename] -l
 ```
 
-Explanation:
+**Explanation:**
 Git Blame is a command used to investigate the alteration history of a file within a Git repository. By running `git blame [filename]`, you can view the history of changes made to the specified file along with the name of the author for each change. Adding the `-l` option to the command additionally displays the SHA (Secure Hash Algorithm) associated with each change, providing a more detailed view of the file's revision history.
 
 Bonus Tip: Many Git code platforms (like GitHub or GitLab) have built-in blame views for easy visualization!
 
 #### Git Log Exploration
 
-Question: How can I effectively navigate and explore the commit history of a Git repository on my local machine, especially when searching for specific information or changes?
-
-
+**Question:** How can I effectively navigate and explore the commit history of a Git repository on my local machine, especially when searching for specific information or changes?
 
 To navigate and explore the commit history within a Git repository, you can utilize various `git log` commands. Here are some options along with their functionalities:
 
@@ -615,7 +595,7 @@ By leveraging these `git log` commands, you can efficiently navigate through the
 
 #### Checking what you are committing
 
-Question: How can I check for changes made to files in my local repository before committing them?
+**Question:** How can I check for changes made to files in my local repository before committing them?
 ```sh
 # To view all changes made to files in your local repository (not staged for commit)
 $ git diff
@@ -628,7 +608,7 @@ $ git diff --stat origin/master
 ```
 #### Useful commands
 
-Question: How can I efficiently manage and analyze Git repositories using various commands?
+**Question:** How can I efficiently manage and analyze Git repositories using various commands?
 
 - **Check if a sha is in production:**
   ```sh
@@ -677,7 +657,7 @@ Question: How can I efficiently manage and analyze Git repositories using variou
   $ git log --author="Author name" --pretty=tformat: --numstat --since=month | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
   ```
   
-#Additional Information:
+# Additional Information:
 
 These commands offer various functionalities for managing Git repositories efficiently.
 Users can customize commands according to their requirements by replacing placeholders such as [sha] and 'Author Name' with actual values.
@@ -685,7 +665,7 @@ Understanding and utilizing these commands can enhance productivity and streamli
 
 #### Useful alias
 
-Question: How can I create a useful alias for Git commands, specifically to enhance the display of logs with branch and merge information?
+**Question:** How can I create a useful alias for Git commands, specifically to enhance the display of logs with branch and merge information?
 
 To set up a useful alias for Git commands, follow these steps:
 
@@ -707,7 +687,7 @@ Customization: Adapt Git to your preferences and the specific needs of your proj
 Discoverability: Aliases can even make less-known Git features more accessible by wrapping them in familiar commands.
 
 #### Contributing Git repository
-Question: How can I contribute to a Git repository? Could you provide a step-by-step guide, especially for beginners?
+**Question:** How can I contribute to a Git repository? Could you provide a step-by-step guide, especially for beginners?
 
 **Steps and Explanation:**
 1. **Fork it!**
@@ -728,7 +708,7 @@ Question: How can I contribute to a Git repository? Could you provide a step-by-
 5. **Submit a pull request - cheers!**
    - **Explanation:** After pushing your changes to your forked repository, you can submit a pull request to the original repository, proposing your changes for inclusion. It's like saying, "Hey, I've made some changes, please review and consider merging them into the main project!"
    
-####Resolving Conflicts in Git
+#### Resolving Conflicts in Git
 
 **Steps to Resolve Conflicts:**
 
@@ -749,9 +729,6 @@ Question: How can I contribute to a Git repository? Could you provide a step-by-
 **Notes:**
 
 - **Understanding Conflict Markers:** Git uses conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) to highlight conflicting sections. The content between `<<<<<<<` and `=======` represents changes from the current branch, while the content between `=======` and `>>>>>>>` represents changes from the incoming branch.
-
 - **Manual Conflict Resolution:** Conflict resolution often requires manual intervention to decide which changes to keep. Carefully review the conflicting sections and make adjustments to ensure the desired outcome.
-
 - **Testing After Resolution:** After resolving conflicts, it's essential to test the changes to ensure they function as expected. Run tests or perform manual checks to verify the integrity of the resolved code.
-
 - **Communication:** When working in a team, communicate with other developers to ensure everyone is aware of conflicts and their resolution. Collaboration and coordination can prevent future conflicts and ensure smoother development workflows.
