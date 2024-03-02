@@ -36,16 +36,16 @@
 
 #### What is Git?
 
-Git is a version control system. It acts like a powerful "undo" button for your project files, especially code.  Key features include:
-
-Change tracking: Tracks every modification to your files over time.
-Snapshots: Records the entire state of your project at different points.
-Reverts: Lets you jump back to previous versions if needed.
-Collaboration: Enables multiple developers to work on the same project smoothly.
+Git is a version control system. It acts like a powerful "undo" button for your project files, especially code.  
+Key features include:
+1. Change tracking: Tracks every modification to your files over time.
+2. Snapshots: Records the entire state of your project at different points.
+3. Reverts: Lets you jump back to previous versions if needed.
+4. Collaboration: Enables multiple developers to work on the same project smoothly.
 
 #### Install Git
 
-**Question:** How do I get Git on computer?
+**Question:**  How do I get Git on computer?
 
 1. **Download the installer:**
    * Visit the official Git website ([https://git-scm.com/download](https://git-scm.com/download)).
