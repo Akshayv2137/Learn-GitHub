@@ -90,7 +90,8 @@ To initialize a repository in an existing directory:
 ```sh
 $ git init
 ```
-This command creates a new subdirectory named .git, housing all necessary repository files, essentially establishing a Git repository skeleton. However, it's important to note that, at this stage, none of your project files are yet tracked.
+This command creates a new subdirectory named .git, housing all necessary repository files, essentially establishing a Git repository skeleton. 
+However, it's important to note that, at this stage, none of your project files are yet tracked.
 
 To commence version control for existing files, you must track them and perform an initial commit. Achieve this by:
 1. Specifying the files you wish to track using `$ git add`.
@@ -139,7 +140,8 @@ $ git status
 
 **Question:** How do you stage files for commit in a Git repository, and what are the different methods available?
 
-In the process of staging files for commit in a Git repository, several methods are available to effectively manage changes. Here's a breakdown of these methods:
+In the process of staging files for commit in a Git repository, several methods are available to effectively manage changes. 
+Here's a breakdown of these methods:
 
 - To stage a specific file, use:
   ```sh
@@ -205,10 +207,10 @@ $ git stash show
 $ git diff stash@{0}
 ```
 
-**Switching branches:** Quickly jump to a different task without finishing what you're currently working on.
+**- Switching branches:** Quickly jump to a different task without finishing what you're currently working on.
 Cleaning up: You want to commit some of your work but not everything. Stash the rest for later.
-**Avoiding conflicts:** You need to pull in changes from a teammate, but your own work isn't ready to merge.
-**Experimenting:** Try out an idea but preserve the option to easily revert back to your previous state.
+**- Avoiding conflicts:** You need to pull in changes from a teammate, but your own work isn't ready to merge.
+**- Experimenting:** Try out an idea but preserve the option to easily revert back to your previous state.
 
 **Remember:** The stash is flexible and powerful. Don't be afraid to use it to keep your workflow organized and avoid losing work!
 
@@ -337,7 +339,6 @@ Below are essential Git commands for managing branches and merging changes:
   Pushes the local branch `branchname` to the remote repository after rebasing.
   
 **Tips:**
-
 Name branches descriptively: (e.g., "new-login-feature", "bugfix-123")
 Switch branches often: Keeps your changes focused within each branch.
 Merge strategically: Decide when and how to bring changes from a branch into your main "master" branch.
@@ -393,7 +394,6 @@ To merge a branch into the trunk/master, follow these steps:
    ```
 
 This sequence of commands allows for the seamless integration of changes from a specific branch into the trunk/master branch while providing an option to cancel the merge operation if necessary.t merge --abort
-```
 
 #### Updating a local repository to the Github repository
 
@@ -457,8 +457,7 @@ Below are some common scenarios and their corresponding commands:
      ```sh
      $ git reset --hard
      ```
-Things to Remember
-
+**Things to Remember**
 Find the commit code: Use git log to find the commit code (like 'abc123') that you want to rewind to.
 Make Backups: If unsure, create a new branch before resetting to protect your work.
 
@@ -539,9 +538,9 @@ $ git blame [filename] -l
 ```
 
 **Explanation:**
-Git Blame is a command used to investigate the alteration history of a file within a Git repository. By running `git blame [filename]`, you can view the history of changes made to the specified file along with the name of the author for each change. Adding the `-l` option to the command additionally displays the SHA (Secure Hash Algorithm) associated with each change, providing a more detailed view of the file's revision history.
+- Git Blame is a command used to investigate the alteration history of a file within a Git repository. By running `git blame [filename]`, you can view the history of changes made to the specified file along with the name of the author for each change. Adding the `-l` option to the command additionally displays the SHA (Secure Hash Algorithm) associated with each change, providing a more detailed view of the file's revision history.
 
-Bonus Tip: Many Git code platforms (like GitHub or GitLab) have built-in blame views for easy visualization!
+**Bonus Tip:** Many Git code platforms (like GitHub or GitLab) have built-in blame views for easy visualization!
 
 #### Git Log Exploration
 
@@ -679,7 +678,7 @@ lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s
 
 This alias, named `lg`, enhances the log display by incorporating a graph for branching and merging, making it easier to visualize the project's history.
 
-Why Aliases Matter:
+**Why Aliases Matter:**
 
 Speed: Eliminate repetitive typing and focus on the task at hand.
 Clarity: Well-constructed aliases bring greater visual order to often complex Git outputs.
