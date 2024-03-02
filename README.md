@@ -63,7 +63,7 @@ Key features include:
 * If you prefer, Git Bash (included with the installer) provides a similar interface to Linux-style command lines.
 * For more advanced installation options or troubleshooting, refer to the Git documentation.To view other ways of installing it visit the [Git official site](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
  
-### Setting up git Your Identity
+#### Setting up git Your Identity
 
 - Upon installing Git, it's crucial to set up your user name and email address promptly.
 - This information is integral as it's associated with every Git commit, becoming a permanent part of your commit history.
@@ -656,7 +656,7 @@ $ git diff --stat origin/master
   $ git log --author="Author name" --pretty=tformat: --numstat --since=month | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
   ```
   
-# Additional Information:
+#### Additional Information:
 
 These commands offer various functionalities for managing Git repositories efficiently.
 Users can customize commands according to their requirements by replacing placeholders such as [sha] and 'Author Name' with actual values.
@@ -685,28 +685,6 @@ Clarity: Well-constructed aliases bring greater visual order to often complex Gi
 Customization: Adapt Git to your preferences and the specific needs of your project.
 Discoverability: Aliases can even make less-known Git features more accessible by wrapping them in familiar commands.
 
-#### Contributing Git repository
-**Question:** How can I contribute to a Git repository? Could you provide a step-by-step guide, especially for beginners?
-
-**Steps and Explanation:**
-1. **Fork it!**
-   - **Explanation:** Forking refers to creating a personal copy of a repository.
-   
-2. **Create your feature branch:**
-   - **Command:** `git checkout -b my-new-feature`
-   - **Explanation:** This command creates a new branch named "my-new-feature" where you'll work on your changes.
-   
-3. **Commit your changes:**
-   - **Command:** `git commit -m 'Add some feature'`
-   - **Explanation:** This command records your changes to the repository along with a descriptive message explaining the changes made.
-   
-4. **Push to the branch:**
-   - **Command:** `git push -u origin my-new-feature`
-   - **Explanation:** Pushes your changes to the remote repository, specifically to the branch "my-new-feature" on the remote repository named "origin."
-   
-5. **Submit a pull request - cheers!**
-   - **Explanation:** After pushing your changes to your forked repository, you can submit a pull request to the original repository, proposing your changes for inclusion. It's like saying, "Hey, I've made some changes, please review and consider merging them into the main project!"
-   
 #### Resolving Conflicts in Git
 
 **Steps to Resolve Conflicts:**
@@ -731,3 +709,26 @@ Discoverability: Aliases can even make less-known Git features more accessible b
 - **Manual Conflict Resolution:** Conflict resolution often requires manual intervention to decide which changes to keep. Carefully review the conflicting sections and make adjustments to ensure the desired outcome.
 - **Testing After Resolution:** After resolving conflicts, it's essential to test the changes to ensure they function as expected. Run tests or perform manual checks to verify the integrity of the resolved code.
 - **Communication:** When working in a team, communicate with other developers to ensure everyone is aware of conflicts and their resolution. Collaboration and coordination can prevent future conflicts and ensure smoother development workflows.
+
+### Contributing Git repository
+**Question:** How can I contribute to a Git repository? Could you provide a step-by-step guide, especially for beginners?
+
+**Steps and Explanation:**
+1. **Fork it!**
+   - **Explanation:** Forking refers to creating a personal copy of a repository.
+   
+2. **Create your feature branch:**
+   - **Command:** `git checkout -b my-new-feature`
+   - **Explanation:** This command creates a new branch named "my-new-feature" where you'll work on your changes.
+   
+3. **Commit your changes:**
+   - **Command:** `git commit -m 'Add some feature'`
+   - **Explanation:** This command records your changes to the repository along with a descriptive message explaining the changes made.
+   
+4. **Push to the branch:**
+   - **Command:** `git push -u origin my-new-feature`
+   - **Explanation:** Pushes your changes to the remote repository, specifically to the branch "my-new-feature" on the remote repository named "origin."
+   
+5. **Submit a pull request - cheers!**
+   - **Explanation:** After pushing your changes to your forked repository, you can submit a pull request to the original repository, proposing your changes for inclusion. It's like saying, "Hey, I've made some changes, please review and consider merging them into the main project!"
+   
