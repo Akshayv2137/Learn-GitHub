@@ -4,7 +4,7 @@
   align="right"
 />
 
-# Learn GitHub Git Commands
+# Learn GitHub and Git Commands
 ## About it
 > New to Git? Master the fundamentals with this quick guide. We'll cover the most important commands for managing your code. Let's make version control easy; feel free to suggest improvements."
 
