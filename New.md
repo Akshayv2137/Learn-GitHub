@@ -55,7 +55,7 @@ Git is a **version control system** — like a powerful "undo" button for your p
 
 ## 🔧 Install Git
 
-### ❓ How do I get Git on my computer?
+**❓ Question:** How do I get Git on my computer?
 
 1. **Download the installer:**
    - Visit: [https://git-scm.com/download](https://git-scm.com/download)
@@ -135,7 +135,7 @@ git commit -m "Initial project version"
 
 ## 📊 Checking the Status of Your Files
 
-**Q: How do I check what's happening with my files in Git?**
+**❓ Question:** How do I check what's happening with my files in Git?
 
 The `git status` command is your best friend for understanding your project's state. Here's how to use it:
 
@@ -174,7 +174,7 @@ $ git status
 
 ## 📥 Staging Files
 
-**Q: How do I stage files for commit, and what options are available?**
+**❓ Question:** How do I stage files for commit, and what options are available?
 In the process of staging files for commit in a Git repository, several methods are available to effectively manage changes. 
 Here's a breakdown of these methods:
 
@@ -211,7 +211,7 @@ By employing these commands, you can efficiently prepare your changes for the ne
 
 ## 🧳 Stashing Changes
 
-**Q: How do I use Git stash to manage changes temporarily?**
+**❓ Question:** How do I use Git stash to manage changes temporarily?
 Git stash is a handy command that allows you to temporarily "hide" changes in a dirty directory, preserving them for later use. This command is particularly useful when you need to switch branches or perform other operations without committing your changes. 
 Here's a breakdown of some common Git stash commands:
 
@@ -270,10 +270,10 @@ git diff stash@{0}
 ```
 
 > ✅ **When to Use Stash:**  
-> - Switching branches:** Quickly jump to a different task without finishing what you're currently working on.
-> - Cleaning up: You want to commit some of your work but not everything. Stash the rest for later.
-> - Avoiding conflicts:** You need to pull in changes from a teammate, but your own work isn't ready to merge.
-> - Experimenting:** Try out an idea but preserve the option to easily revert back to your previous state.
+ - Switching branches:** Quickly jump to a different task without finishing what you're currently working on.
+ - Cleaning up: You want to commit some of your work but not everything. Stash the rest for later.
+ - Avoiding conflicts:** You need to pull in changes from a teammate, but your own work isn't ready to merge.
+ - Experimenting:** Try out an idea but preserve the option to easily revert back to your previous state.
 
 **Remember:** The stash is flexible and powerful. Don't be afraid to use it to keep your workflow organized and avoid losing work!
 
@@ -281,7 +281,7 @@ git diff stash@{0}
 
 ## 📝 Committing Files
 
-**Q: What are the different ways to commit files in Git?**
+**❓ Question:** What are the different ways to commit files in Git?
 After staging files, the next step is to commit them using the following commands:
 
 ### ✅ Commit Staged Files
@@ -347,34 +347,19 @@ Great! Here's how you can integrate your “Additional Information” section cl
 
 ---
 
-## 📝 Committing Files
-
-...
-
-<existing content remains unchanged>
-
----
-
 ### 📌 Additional Information
 
-- 🧼 Squashing commits using git reset --soft may require force-pushing commits. This is generally acceptable:
+  - 🧼 Squashing commits using git reset --soft may require force-pushing commits. This is generally acceptable:
   - If you're working on a feature branch
   - Before merging to master/main
   - Before creating a Pull Request
-- 💡 The commands listed above show multiple ways to commit files in Git.
-- 🔧 Techniques such as amending commits and squashing commits help you maintain a clean and understandable commit history.
-
----
-Here’s your content converted into a GitHub-friendly .md file format with clear formatting, emojis, bold titles, and code blocks preserved for copy-paste functionality. I’ve added emojis to make it more engaging and bolded key sections while ensuring nothing from your original content is lost.
-
-You can copy and paste this directly into a .md file in your GitHub repo:
+  - 💡 The commands listed above show multiple ways to commit files in Git.
+  - 🔧 Techniques such as amending commits and squashing commits help you maintain a clean and understandable commit history.
 
 ---
 
 # 🚀 Git Branching, Merging & Remote Management Guide
-
 ---
-
 ## 🌿 **Branching and Merging**
 
 **❓ Question:** How can you delete a local branch in Git, ensuring it is removed even if it hasn't been merged yet?
@@ -472,24 +457,24 @@ Removes any remote references that are no longer present on the remote repositor
 To fetch and check out remote branches in Git, follow these steps:
 
 ### 1️⃣ Fetch Remote Branches
-   # Fetch all remote branches
+    Fetch all remote branches
 ```bash
 $ git fetch origin
 ```
 
 ### 2️⃣ Checkout Remote Branch
-   # Create a local working copy of a remote branch
+    Create a local working copy of a remote branch
 ```bash
 $ git checkout -b <local-branch-name> origin/<remote-branch-name>
 ```
 
 ### 3️⃣ Delete Remote Branch
-   # Remove a remote branch reference locally
+    Remove a remote branch reference locally
   ```bash
   $ git branch -rd origin/<branch-name>
   ```
 
-   # Delete the remote branch from the repository
+    Delete the remote branch from the repository
   ```bash
   $ git push origin --delete <branch-name>
   ```
