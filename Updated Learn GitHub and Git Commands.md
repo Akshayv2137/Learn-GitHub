@@ -33,11 +33,13 @@
 - [🔎 Git Grep](#-git-grep)
 - [🕵️ Git Blame](#-git-blame)
 - [🧭 Git Log Exploration](#-git-log-exploration)
-- [📝 Checking What You're Committing](#-checking-what-you're-committing)
+#- [📝Checking What Youre Committing](#-checking-what-youre-committing)
 - [📚 Useful Git Commands](#-useful-git-commands)
 - [📌 Useful Alias](#-useful-alias)
-- [🤝 Resolving Conflicts in Git](#-resolvingc-onflicts-in-git)
-- [⚔️ Resolving Conflicts](#-resolving-conflicts-in-git)
+- [⚔️ Resolving Conflicts in Git](#-resolvingc-onflicts-in-git)
+- [🤝 Contributing to a Git Repository](#-contributing-to-a-git-repository)
+
+
 
 ---
 
@@ -727,7 +729,7 @@ By leveraging these `git log` commands, you can efficiently navigate through the
 
 ---
 
-## ✅ Checking What You're Committing
+## ✅ Checking What Youre Committing
 
 **❓ Question:** How can I check for changes made before committing?
 
