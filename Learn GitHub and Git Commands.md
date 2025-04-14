@@ -11,7 +11,7 @@
 ## Table of contents
 
 * [What is Git?](#what-is-git?)
-* [Install git](#how-do-i-get-git-on-computer?)
+* [Install git](#install-git)
 * [Setting up git Your Identity](#setting-up-git-your-identity)
 * [Applying colour to git ](#applying-colour-to-git)
 * [Initializing a repository in an existing directory](#initializing-a-repository-in-an-existing-directory)
