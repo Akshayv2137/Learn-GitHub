@@ -33,10 +33,10 @@
 - [🔎 Git Grep](#-git-grep)
 - [🕵️ Git Blame](#-git-blame)
 - [🧭 Git Log Exploration](#-git-log-exploration)
-#- [📝Checking What Youre Committing](#-checking-what-youre-committing)
-- [📚 Useful Git Commands](#-useful-git-commands)
+- [📝Checking What Youre Committing](#-checking-what-youre-committing)
+- [🛠️ Useful Git Commands](#-useful-git-commands)
 - [📌 Useful Alias](#-useful-alias)
-- [⚔️ Resolving Conflicts in Git](#-resolvingc-onflicts-in-git)
+- [⚔️ Resolving Conflicts in Git](#-resolving-conflicts-in-git)
 - [🤝 Contributing to a Git Repository](#-contributing-to-a-git-repository)
 
 
@@ -852,7 +852,7 @@ lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s
 
 ## 🔧 Resolving Conflicts in Git
 
-### 🛠️ Steps to Resolve Conflicts:
+### ⚔️ Steps to Resolve Conflicts:
 
 1. 🚨 **Identify Conflicts:**
    Conflicts occur when Git detects changes in the same part of a file that cannot be automatically merged. Use `git status` to identify conflicted files.
